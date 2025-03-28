@@ -25,3 +25,6 @@ mongo-express:
       ME_CONFIG_MONGODB_ADMINPASSWORD: qwerty
       ME_CONFIG_MONGODB_URL: mongodb://admin:qwerty@mongo:27017/
     
+
+    # docker compose -f "file name.yaml "  up -d 
+    # docker compose -f "file name.yaml " down
