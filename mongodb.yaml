@@ -2,10 +2,13 @@ version: "3.8"
 
 services:
 mongo:
-    image: mongo
-   
+    image: mongo   
     ports:
       - 27017:27017
+
+    --name: mongo
+    --network: mongo-network
+
     environment:
       MONGO_INITDB_ROOT_USERNAME: admin
       MONGO_INITDB_ROOT_PASSWORD: qwerty
@@ -14,6 +17,10 @@ mongo-express:
     image: mongo-express
     ports:
       - 8081:8081
+
+    --name: mongo-express
+    --network: mongo-network
+
     environment:
       ME_CONFIG_MONGODB_ADMINUSERNAME: admin
       ME_CONFIG_MONGODB_ADMINPASSWORD: qwerty
