@@ -22,3 +22,4 @@ services:
     # docker compose -f "file name.yaml "  up -d 
     # docker compose -f "file name.yaml " down
     # the process of converting running application to a running docter container is called dockerization
+    
